@@ -8,6 +8,17 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name.endsWith('.jpg') || assetInfo.name.endsWith('.png')) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    }
   }
 })
