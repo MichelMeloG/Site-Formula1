@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-// Importando imagens das equipes
-import alpine from '/src/media/equipes/carro-alpine.jpg';
-import astonmartin from '/src/media/equipes/carro-astonmartin.jpg';
-import ferrari from '/src/media/equipes/carro-ferrari.jpg';
-import mercedes from '/src/media/equipes/carro-mercedes.jpg';
-import racingbulls from '/src/media/equipes/carro-racingbulls.jpg';
-import redbull from '/src/media/equipes/carro-redbull.jpg';
-import stake from '/src/media/equipes/carro-stake.jpg';
-import williams from '/src/media/equipes/carro-williams.jpg';
-import mclaren from '/src/media/equipes/carro-mclaren.jpg';
-import haas from '/src/media/equipes/carro-haas.jpg';
+// Importando imagens das equipes - usando caminhos públicos
+const alpine = '/Site-Formula1/media/equipes/carro-alpine.jpg';
+const astonmartin = '/Site-Formula1/media/equipes/carro-astonmartin.jpg';
+const ferrari = '/Site-Formula1/media/equipes/carro-ferrari.jpg';
+const mercedes = '/Site-Formula1/media/equipes/carro-mercedes.jpg';
+const racingbulls = '/Site-Formula1/media/equipes/carro-racingbulls.jpg';
+const redbull = '/Site-Formula1/media/equipes/carro-redbull.jpg';
+const stake = '/Site-Formula1/media/equipes/carro-stake.jpg';
+const williams = '/Site-Formula1/media/equipes/carro-williams.jpg';
+const mclaren = '/Site-Formula1/media/equipes/carro-mclaren.jpg';
+const haas = '/Site-Formula1/media/equipes/carro-haas.jpg';
 
 const teamDescriptions = [
     "Alpine: Representando a Renault, com Pierre Gasly e Esteban Ocon. Focada em se estabelecer como uma força no meio do pelotão.",

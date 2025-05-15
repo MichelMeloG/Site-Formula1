@@ -1,6 +1,6 @@
 import './App.css'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/pages/Home'
 import 'leaflet/dist/leaflet.css';
@@ -9,11 +9,11 @@ import 'leaflet/dist/leaflet.css';
 
 function App() {
    return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

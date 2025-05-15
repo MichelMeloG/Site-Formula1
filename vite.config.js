@@ -5,20 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Site-Formula1/',
+  server: {
+    port: 5175,
+    watch: {
+      usePolling: true
+    }
+  },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name.endsWith('.jpg') || assetInfo.name.endsWith('.png')) {
-            return 'assets/images/[name]-[hash][extname]';
-          }
-          return 'assets/[name]-[hash][extname]';
-        }
-      }
-    }
-  }
+    sourcemap: false
+  },
+  publicDir: 'public'
 })

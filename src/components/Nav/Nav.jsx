@@ -45,12 +45,10 @@ function Nav() {
   }, []);
 
   return (
-    <Container>
-      <nav className={isSticky ? 'sticky' : ''}>
-        <img src="/src/media/logo.png" alt="Logo" />
+    <Container>      <nav className={isSticky ? 'sticky' : ''}>        <img src="/Site-Formula1/media/logo.png" alt="Logo" />
         <div className="dropdown">
           <button className="dropbtn" onClick={handleDropdownClick}>
-            <img src="/src/media/menu.png" alt="Menu" />
+            <img src="/Site-Formula1/media/menu.png" alt="Menu" />
           </button>
           <div
             className="dropdown-content"
